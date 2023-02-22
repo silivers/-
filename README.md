@@ -1,4 +1,5 @@
 # -四川轻化工大学计算机学院官网
+预览：https://silivers.github.io/SUSE/
 - 作者：村姑来了战队
 - 队员：
 
