@@ -1,0 +1,515 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+i {
+    font-family: "iconfont" !important;
+    font-style: normal;
+}
+
+/***************************header start********************************/
+header {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.topBanner {
+    width: 100%;
+    height: 120px;
+    background: url("../images/top/topBanner.jpg") no-repeat center center;
+    cursor: pointer;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: #15635d;
+}
+.navCenter {
+   width: 1030px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.navCenter ul span {
+    color: #eeeeea;
+    margin: 0 0.5em;
+}
+
+.navCenter ul {
+    float: left;
+}
+
+.navCenter ul li {
+    display: inline-block;
+}
+
+.navCenter ul li a {
+    color: #b0b0b0;
+    transition: all .5s;
+}
+
+.navCenter ul li a:hover, .navCenter .shoppingCart:hover {
+    color: #fff;
+}
+
+.navCenter {
+    float: right;
+}
+
+.shoppingCart {
+    width: 120px;
+    height: 40px;
+    margin-left: 27px;
+    display: inline-block;
+    background-color: #424242;
+    text-align: center;
+    color: #b0b0b0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.navCenter .login .shoppingCart i {
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+.logoNav {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 22px;
+    float: left;
+    cursor: pointer;
+}
+
+.logoNav ul {
+    width: 700px;
+    margin-left: 250px;
+    line-height: 100px;
+}
+
+.logoNav ul li {
+    float: left;
+    height: 80px;
+    padding: 0 10px;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.logoNav ul li:hover {
+    border-bottom: 2px solid #ff6702;
+}
+
+.logoNav ul li a {
+    font-size: 16px;
+    color: #333;
+}
+
+.logoNav .search {
+    float: right;
+    line-height: 100px;
+    font-size: 0;
+    position: relative;
+    margin-top: 25px;
+}
+.logoNav .search .hotwords {
+    width: 177px;
+    height: 0;
+    position: absolute;
+    background-color: red;
+    top: -25px;
+    right: 60px;
+    display: inline-block;
+    text-align: right;
+    z-index: 2;
+}
+
+.logoNav .search .hotwords a {
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #eeeeee;
+    color: #757575;
+    transition: all .2s;
+}
+
+.logoNav .search .hotwords a:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.logoNav .search input[type="search"] {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    line-height: 50px;
+    outline: 0;
+    padding: 0 10px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 49px;
+    transition: all .2s;
+}
+
+.logoNav .search input[type="search"]:hover {
+    border-color: #b0b0b0;
+}
+
+.logoNav .search input[type="button"] {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #e0e0e0;
+    font-family: "iconfont" !important;
+    font-size: 24px;
+    color: #616161;
+    background-color: #fff;
+    line-height: 24px;
+    outline: 0;
+    cursor: pointer;
+    transition: all .2s;
+    background: url("../images/top/search.jpeg")
+
+}
+
+.logoNav .search input[type="button"]:hover {
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+/***************************logoNav end********************************/
+/***************************banner start********************************/
+.banner {
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/*轮播图无限滚动*/
+.bannerPic {
+    width: 7400px;
+    height: 460px;
+    animation: move 30s linear infinite 0s normal;
+}
+    bottom: 15px;
+    right: 30px;
+}
+.bannerPic:hover {
+    animation-play-state: paused;
+}
+.bannerPic li {
+    width: 1226px;
+    height: 460px;
+    float: left;
+}
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+    18% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: -1226px;
+    }
+    38% {
+        margin-left: -1226px;
+    }
+    40% {
+        margin-left: -2452px;
+    }
+    58% {
+        margin-left: -2452px;
+    }
+    60% {
+        margin-left: -3678px;
+    }
+    78% {
+        margin-left: -3678px;
+    }
+    80% {
+        margin-left: -4904px;
+    }
+    98% {
+        margin-left: -4904px;
+    }
+    100% {
+        margin-left: -6130px;
+    }
+}
+.banner .arrow {
+    width: 40px;
+    height: 70px;
+    margin-top: -35px;
+    font-size: 50px;
+    color: #757575;
+    position: absolute;
+    top: 50%;
+    transition: all .3s;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.banner .leftArrow {
+    left: 234px;
+}
+
+.banner .rightArrow {
+    right: 0;
+}
+
+.banner .arrow:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+/***************************banner end********************************/
+/***************************suggest start********************************/
+.suggest {text-align:center;
+    width: 1226px;
+    height: 170px;
+    margin: 14px auto 26px;
+}
+.suggest .suggestImg {
+    float: left;
+    margin-left: -1px;
+    width: 993px;
+    height: 170px;
+}
+
+.suggest .suggestImg li {
+    margin-left: 15px;
+    float: left;
+    width: 310px;
+    height: 170px;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+}
+
+.suggest .suggestImg li img {
+    width: 316px;
+    height: 170px;
+}
+
+.suggest .suggestImg li:hover {
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 15px 30px;
+}
+
+/***************************suggest end********************************/
+/***************************star start********************************/
+.star {
+    width: 1226px;
+    height: 438px;
+    margin: 0 auto;
+}
+
+.star ul {
+    width: 1226px;
+    height: 340px;
+    margin-bottom: 40px;
+}
+
+.star ul li {
+    width: 234px;
+    height: 340px;
+    float: left;
+    background: #fafafa;
+    box-sizing: border-box;
+    padding-top: 39px;
+    margin-right: 14px;
+    text-align: center;
+    transition: all .6s;
+}
+
+.star ul li img {
+    width: 160px;
+    margin: 0 auto 22px;
+    cursor: pointer;
+}
+
+.star ul li .description h3 {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.star ul li .description p {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.star ul li .description h4 {
+    color: #ff6709;
+    font-weight: normal;
+}
+
+.star ul li:nth-child(1) {
+    border-top: 1px solid #ffac13;
+}
+
+.star ul li:nth-child(2) {
+    border-top: 1px solid #83c44e;
+}
+
+.star ul li:nth-child(3) {
+    border-top: 1px solid #2196f3;
+}
+
+.star ul li:nth-child(4) {
+    border-top: 1px solid #e53935;
+}
+
+.star ul li:nth-child(5) {
+    border-top: 1px solid #00c0a5;
+    margin-right: 0;
+}
+
+/***************************star end********************************/
+/***************************mainbody start********************************/
+
+.title p {
+    width: 89px;
+    height: 58px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+    transition: all .4s;
+    cursor: pointer;
+}
+.title p:hover {
+    color: #ff6700;
+}
+
+.title p:hover i {
+    color: #ff6700;
+}
+
+.title p i {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: #b0b0b0;
+    margin-left: 10px;
+}
+
+.title {
+    width: 1226px;
+    height: 58px;
+    position: relative;
+}
+
+.title h2 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    float: left;
+}
+
+.title .miniArrow {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-top: 17px;
+    color: #b0b0b0;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.title .miniArrow:hover {
+    color: #ff6700;
+    border: 1px solid #ff6700;
+}
+
+.title .other ul {
+    float: right;
+    height: 58px;
+}
+
+.title .other ul li {
+    float: left;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin: 14px 0 14px 30px;
+}
+
+.title .other ul li a {
+    padding-bottom: 3px;
+}
+
+.title .other ul li:first-child a, .title .other ul li a:hover {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+.title .other ul li a {
+    color: #333;
+}
+/*页面hover悬浮效果*/
+.list li:hover, .aside ul li:hover, .list .more > div:hover, .doubleList li:hover, .video ul li:hover, .smart .aside img:hover {
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translate3d(0, -2px, 0);
+}
+footer {
+    width: 100%;
+    height: 440px;
+    background-color: #fafafa;
+}
+.slogan {
+    width: 267px;
+    height: 19px;
+    margin: 0 auto;
+}
